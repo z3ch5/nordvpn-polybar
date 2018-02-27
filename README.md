@@ -9,7 +9,7 @@ Python3
 openpyn
 
 # Screenshots
-[![before click](nordvpn-polybar/first.png)]
+[![before click](first.png)]
 
 [https://github.com/z3ch5/nordvpn-polybar/blob/master/second.png|alt=octocat]]
 [[https://github.com/z3ch5/nordvpn-polybar/blob/master/settings.png|alt=octocat]]
