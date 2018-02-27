@@ -1,8 +1,14 @@
 # nordvpn-polybar
 This is just polybar module to make you feel cool connecting nordvpn, using openpyn (python script helper)
-I used a lot of menus in the module, so that people can have a lot of configurations
+I used a lot of menus in the module, so that people can have a lot of configurations.
 
-Dependencies:
+# Features:
+Most of openpyn features are supported which are:
+-Connecting to all countries Nordvpn has.
+-Protocols: TCP or UDP.
+-Server types: Dedicated, P2P, Onion over VPN, Double VPN, Anti DDoS, Dedicated IP Servers
+
+# Dependencies:
 -Polybar<br />
 -Python3<br />
 -openpyn<br />
@@ -17,6 +23,7 @@ Settings ![](settings.png)<br />
 choosing country ![](country.png)<br />
 European countries ![](europe.png)<br />
 choosing protocol ![](protocol.png)<br />
+choosing server type: ![](server-type.png)<br />
 checking best servers ![](tops.png)<br />
 
 
