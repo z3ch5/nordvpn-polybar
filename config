@@ -1,0 +1,216 @@
+# you need to edit the path of openpyn.sh and openpyn.conf
+# have fun :P
+
+[module/openpyn]
+
+type = custom/menu
+
+; If true, <label-toggle> will be to the left of the menu items (default).
+; If false, it will be on the right of all the items.
+expand-right = true
+
+; Other commands will be executed using "/usr/bin/env sh -c $COMMAND"
+
+label-open = VPN
+label-close = Exit
+label-separator = |
+
+menu-0-0 = Connect
+menu-0-0-exec = ~/.config/polybar/openpyn.sh &
+menu-0-1 = Disconnect
+menu-0-1-exec = openpyn -x &
+menu-0-2 = Settings
+menu-0-2-exec = menu-open-1
+menu-0-3 = Update Servers
+menu-0-3-exec = openpyn --update &
+
+menu-1-0 = Country
+menu-1-0-exec = menu-open-2
+menu-1-1 = Server Type
+menu-1-1-exec = menu-open-3
+menu-1-2 = Protocol
+menu-1-2-exec = menu-open-4
+menu-1-3 = Top Servers
+menu-1-3-exec = menu-open-5
+
+menu-2-0 = The Americas
+menu-2-0-exec = menu-open-6
+menu-2-1 = Europe Union
+menu-2-1-exec = menu-open-7
+menu-2-2 = Europe (Non-EU)
+menu-2-2-exec = menu-open-8
+menu-2-3 = Asia Pacific
+menu-2-3-exec = menu-open-9
+menu-2-4 = Africa, the Middle East and India
+menu-2-4-exec = menu-open-10
+
+menu-6-0 = United States
+menu-6-0-exec = sed -i 's,^\(country[ ]*=\).*,\1'us',g' ~/.config/polybar/openpyn.conf
+menu-6-1 = Canada
+menu-6-1-exec = sed -i 's,^\(country[ ]*=\).*,\1'ca',g' ~/.config/polybar/openpyn.conf
+menu-6-2 = Brazil
+menu-6-2-exec = sed -i 's,^\(country[ ]*=\).*,\1'br',g' ~/.config/polybar/openpyn.conf
+menu-6-3 = Argentina
+menu-6-3-exec = sed -i 's,^\(country[ ]*=\).*,\1'ar',g' ~/.config/polybar/openpyn.conf
+menu-6-4 = Costa Rica
+menu-6-4-exec = sed -i 's,^\(country[ ]*=\).*,\1'cr',g' ~/.config/polybar/openpyn.conf
+menu-6-5 = Mexico
+menu-6-5-exec = sed -i 's,^\(country[ ]*=\).*,\1'mx',g' ~/.config/polybar/openpyn.conf
+menu-6-6 = Chile
+menu-6-6-exec = sed -i 's,^\(country[ ]*=\).*,\1'cl',g' ~/.config/polybar/openpyn.conf
+
+menu-7-0 = Netherlands
+menu-7-0-exec = sed -i 's,^\(country[ ]*=\).*,\1'nl',g' ~/.config/polybar/openpyn.conf
+menu-7-1 = Germany
+menu-7-1-exec = sed -i 's,^\(country[ ]*=\).*,\1'de',g' ~/.config/polybar/openpyn.conf
+menu-7-2 = France
+menu-7-2-exec = sed -i 's,^\(country[ ]*=\).*,\1'fr',g' ~/.config/polybar/openpyn.conf
+menu-7-3 = Sweden
+menu-7-3-exec = sed -i 's,^\(country[ ]*=\).*,\1'se',g' ~/.config/polybar/openpyn.conf
+menu-7-4 = Denmark
+menu-7-4-exec = sed -i 's,^\(country[ ]*=\).*,\1'dk',g' ~/.config/polybar/openpyn.conf
+menu-7-5 = Belgium
+menu-7-5-exec = sed -i 's,^\(country[ ]*=\).*,\1'be',g' ~/.config/polybar/openpyn.conf
+menu-7-6 = Spain
+menu-7-6-exec = sed -i 's,^\(country[ ]*=\).*,\1'es',g' ~/.config/polybar/openpyn.conf
+menu-7-7 = Italy
+menu-7-7-exec = sed -i 's,^\(country[ ]*=\).*,\1'it',g' ~/.config/polybar/openpyn.conf
+menu-7-8 = Finland
+menu-7-8-exec = sed -i 's,^\(country[ ]*=\).*,\1'fi',g' ~/.config/polybar/openpyn.conf
+menu-7-9 = Austria
+menu-7-9-exec = sed -i 's,^\(country[ ]*=\).*,\1'at',g' ~/.config/polybar/openpyn.conf
+menu-7-10 = Czech Republic
+menu-7-10-exec = sed -i 's,^\(country[ ]*=\).*,\1'cz',g' ~/.config/polybar/openpyn.conf
+menu-7-11 = Luxembourg
+menu-7-11-exec = sed -i 's,^\(country[ ]*=\).*,\1'lu',g' ~/.config/polybar/openpyn.conf
+menu-7-12 = Romania
+menu-7-12-exec = sed -i 's,^\(country[ ]*=\).*,\1'ro',g' ~/.config/polybar/openpyn.conf
+menu-7-13 = Poland
+menu-7-13-exec = sed -i 's,^\(country[ ]*=\).*,\1'pl',g' ~/.config/polybar/openpyn.conf
+menu-7-14 = Estonia
+menu-7-14-exec = sed -i 's,^\(country[ ]*=\).*,\1'ee',g' ~/.config/polybar/openpyn.conf
+menu-7-15 = Hungary
+menu-7-15-exec = sed -i 's,^\(country[ ]*=\).*,\1'hu',g' ~/.config/polybar/openpyn.conf
+menu-7-16 = Bulgaria
+menu-7-16-exec = sed -i 's,^\(country[ ]*=\).*,\1'bg',g' ~/.config/polybar/openpyn.conf
+menu-7-17 = Croatia
+menu-7-17-exec = sed -i 's,^\(country[ ]*=\).*,\1'hr',g' ~/.config/polybar/openpyn.conf
+menu-7-18 = Latvia
+menu-7-18-exec = sed -i 's,^\(country[ ]*=\).*,\1'lv',g' ~/.config/polybar/openpyn.conf
+menu-7-19 = Portugal
+menu-7-19-exec = sed -i 's,^\(country[ ]*=\).*,\1'pt',g' ~/.config/polybar/openpyn.conf
+menu-7-20 = Greece
+menu-7-20-exec = sed -i 's,^\(country[ ]*=\).*,\1'gr',g' ~/.config/polybar/openpyn.conf
+menu-7-21 = Ireland
+menu-7-21-exec = sed -i 's,^\(country[ ]*=\).*,\1'ie',g' ~/.config/polybar/openpyn.conf
+
+menu-8-0 = United Kingdom
+menu-8-0-exec = sed -i 's,^\(country[ ]*=\).*,\1'uk',g' ~/.config/polybar/openpyn.conf
+menu-8-1 = Switzerland
+menu-8-1-exec = sed -i 's,^\(country[ ]*=\).*,\1'ch',g' ~/.config/polybar/openpyn.conf
+menu-8-2 = Norway
+menu-8-2-exec = sed -i 's,^\(country[ ]*=\).*,\1'no',g' ~/.config/polybar/openpyn.conf
+menu-8-3 = Russia
+menu-8-3-exec = sed -i 's,^\(country[ ]*=\).*,\1'ru',g' ~/.config/polybar/openpyn.conf
+menu-8-4 = Iceland
+menu-8-4-exec = sed -i 's,^\(country[ ]*=\).*,\1'is',g' ~/.config/polybar/openpyn.conf
+menu-8-5 = Albania
+menu-8-5-exec = sed -i 's,^\(country[ ]*=\).*,\1'al',g' ~/.config/polybar/openpyn.conf
+menu-8-6 = Ukraine
+menu-8-6-exec = sed -i 's,^\(country[ ]*=\).*,\1'ua',g' ~/.config/polybar/openpyn.conf
+menu-8-7 = Bosnia and Herzegovina
+menu-8-7-exec = sed -i 's,^\(country[ ]*=\).*,\1'ba',g' ~/.config/polybar/openpyn.conf
+menu-8-8 = Georgia
+menu-8-8-exec = sed -i 's,^\(country[ ]*=\).*,\1'ge',g' ~/.config/polybar/openpyn.conf
+menu-8-9 = Macedonia
+menu-8-9-exec = sed -i 's,^\(country[ ]*=\).*,\1'mk',g' ~/.config/polybar/openpyn.conf
+menu-8-10 = Moldova
+menu-8-10-exec = sed -i 's,^\(country[ ]*=\).*,\1'md',g' ~/.config/polybar/openpyn.conf
+menu-8-11 = Slovenia
+menu-8-11-exec = sed -i 's,^\(country[ ]*=\).*,\1'si',g' ~/.config/polybar/openpyn.conf
+menu-8-12 = Cyprus
+menu-8-12-exec = sed -i 's,^\(country[ ]*=\).*,\1'cy',g' ~/.config/polybar/openpyn.conf
+menu-8-13 = Serbia
+menu-8-13-exec = sed -i 's,^\(country[ ]*=\).*,\1'rs',g' ~/.config/polybar/openpyn.conf
+
+menu-9-0 = Australia
+menu-9-0-exec = sed -i 's,^\(country[ ]*=\).*,\1'au',g' ~/.config/polybar/openpyn.conf
+menu-9-1 = Singapore
+menu-9-1-exec = sed -i 's,^\(country[ ]*=\).*,\1'sg',g' ~/.config/polybar/openpyn.conf
+menu-9-2 = Japan
+menu-9-2-exec = sed -i 's,^\(country[ ]*=\).*,\1'jp',g' ~/.config/polybar/openpyn.conf
+menu-9-3 = Hong Kong
+menu-9-3-exec = sed -i 's,^\(country[ ]*=\).*,\1'hk',g' ~/.config/polybar/openpyn.conf
+menu-9-4 = New Zealand
+menu-9-4-exec = sed -i 's,^\(country[ ]*=\).*,\1'nz',g' ~/.config/polybar/openpyn.conf
+menu-9-5 = Taiwan
+menu-9-5-exec = sed -i 's,^\(country[ ]*=\).*,\1'tw',g' ~/.config/polybar/openpyn.conf
+menu-9-6 = Malaysia
+menu-9-6-exec = sed -i 's,^\(country[ ]*=\).*,\1'my',g' ~/.config/polybar/openpyn.conf
+menu-9-7 = South Korea
+menu-9-7-exec = sed -i 's,^\(country[ ]*=\).*,\1'kr',g' ~/.config/polybar/openpyn.conf
+menu-9-8 = Indonesia
+menu-9-8-exec = sed -i 's,^\(country[ ]*=\).*,\1'id',g' ~/.config/polybar/openpyn.conf
+menu-9-9 = Vietnam
+menu-9-9-exec = sed -i 's,^\(country[ ]*=\).*,\1'vn',g' ~/.config/polybar/openpyn.conf
+menu-9-10 = Thailand
+menu-9-10-exec = sed -i 's,^\(country[ ]*=\).*,\1'th',g' ~/.config/polybar/openpyn.conf
+
+menu-10-0 = India
+menu-10-0-exec = sed -i 's,^\(country[ ]*=\).*,\1'in',g' ~/.config/polybar/openpyn.conf
+menu-10-1 = South Africa
+menu-10-1-exec = sed -i 's,^\(country[ ]*=\).*,\1'za',g' ~/.config/polybar/openpyn.conf
+menu-10-2 = Turkey
+menu-10-2-exec = sed -i 's,^\(country[ ]*=\).*,\1'tr',g' ~/.config/polybar/openpyn.conf
+menu-10-3 = Israel
+menu-10-3-exec = sed -i 's,^\(country[ ]*=\).*,\1'il',g' ~/.config/polybar/openpyn.conf
+menu-10-4 = United Arab Emirates
+menu-10-4-exec = sed -i 's,^\(country[ ]*=\).*,\1'ae',g' ~/.config/polybar/openpyn.conf
+menu-10-5 = Egypt
+menu-10-5-exec = sed -i 's,^\(country[ ]*=\).*,\1'eg',g' ~/.config/polybar/openpyn.conf
+
+menu-3-0 = Normal
+menu-3-0-exec = sed -i 's,^\(servertype[ ]*=\).*,\1'normal',g' ~/.config/polybar/openpyn.conf
+menu-3-1 = P2P
+menu-3-1-exec = sed -i 's,^\(servertype[ ]*=\).*,\1'p2p',g' ~/.config/polybar/openpyn.conf
+menu-3-2 = Onion Over VPN
+menu-3-2-exec = sed -i 's,^\(servertype[ ]*=\).*,\1'tor',g' ~/.config/polybar/openpyn.conf
+menu-3-3 = Double VPN
+menu-3-3-exec = sed -i 's,^\(servertype[ ]*=\).*,\1'double',g' ~/.config/polybar/openpyn.conf
+menu-3-4 = Anti DDoS
+menu-3-4-exec = sed -i 's,^\(servertype[ ]*=\).*,\1'anti-ddos',g' ~/.config/polybar/openpyn.conf
+menu-3-5 = Dedicated IP servers
+menu-3-5-exec = sed -i 's,^\(servertype[ ]*=\).*,\1'dedicated',g' ~/.config/polybar/openpyn.conf
+###########NOT SUPPORTED YET##########
+#menu-3-6 = Obfuscated Servers
+#menu-3-6-exec = sed -i 's,^\(servertype[ ]*=\).*,\1'obfuscated',g' ~/.config/polybar/openpyn.conf
+
+menu-4-0 = TCP
+menu-4-0-exec = sed -i 's,^\(protocol[ ]*=\).*,\1'tcp',g' ~/.config/polybar/openpyn.conf
+menu-4-1 = UDP
+menu-4-1-exec = sed -i 's,^\(protocol[ ]*=\).*,\1'udp',g' ~/.config/polybar/openpyn.conf
+
+menu-5-0 = Top 3
+menu-5-0-exec = sed -i 's,^\(topservers[ ]*=\).*,\1'3',g' ~/.config/polybar/openpyn.conf
+menu-5-1 = Top 4
+menu-5-1-exec = sed -i 's,^\(topservers[ ]*=\).*,\1'4',g' ~/.config/polybar/openpyn.conf
+menu-5-2 = Top 5
+menu-5-2-exec = sed -i 's,^\(topservers[ ]*=\).*,\1'5',g' ~/.config/polybar/openpyn.conf
+menu-5-3 = Top 6
+menu-5-3-exec = sed -i 's,^\(topservers[ ]*=\).*,\1'6',g' ~/.config/polybar/openpyn.conf
+menu-5-4 = Top 7
+menu-5-4-exec = sed -i 's,^\(topservers[ ]*=\).*,\1'7',g' ~/.config/polybar/openpyn.conf
+menu-5-5 = Top 8
+menu-5-5-exec = sed -i 's,^\(topservers[ ]*=\).*,\1'8',g' ~/.config/polybar/openpyn.conf
+menu-5-6 = Top 9
+menu-5-6-exec = sed -i 's,^\(topservers[ ]*=\).*,\1'9',g' ~/.config/polybar/openpyn.conf
+menu-5-7 = Top 10
+menu-5-7-exec = sed -i 's,^\(topservers[ ]*=\).*,\1'10',g' ~/.config/polybar/openpyn.conf
+menu-5-8 = Top 11
+menu-5-8-exec = sed -i 's,^\(topservers[ ]*=\).*,\1'11',g' ~/.config/polybar/openpyn.conf
+menu-5-9 = Top 12
+menu-5-9-exec = sed -i 's,^\(topservers[ ]*=\).*,\1'12',g' ~/.config/polybar/openpyn.conf
+menu-5-10 = Top 13
+menu-5-10-exec = sed -i 's,^\(topservers[ ]*=\).*,\1'13',g' ~/.config/polybar/openpyn.conf
+menu-5-11 = Top 14
+menu-5-11-exec = sed -i 's,^\(topservers[ ]*=\).*,\1'14',g' ~/.config/polybar/openpyn.conf
