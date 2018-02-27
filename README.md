@@ -9,14 +9,13 @@ Python3
 openpyn
 
 # Screenshots
-Before click [![](first.png)]]
-
-Menu : [![](second.png)]]
-Settings [![](settings.png)]]
-choosing country [![](country.png)]]
-European countries [![](europe.png)]]
-choosing protocol [![](protocol.png)]]
-checking best servers [![](tops.png)]]
+Before click [![](first.png)]]<br />
+Menu : [![](second.png)]]<br />
+Settings [![](settings.png)]]<br />
+choosing country [![](country.png)]]<br />
+European countries [![](europe.png)]]<br />
+choosing protocol [![](protocol.png)]]<br />
+checking best servers [![](tops.png)]]<br />
 
 
 
