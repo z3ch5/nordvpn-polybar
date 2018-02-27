@@ -11,13 +11,13 @@ Dependencies:
 Please change the directories of the configuration files due to your setup
 
 # Screenshots
-Before click [![](first.png)]]<br />
-Menu : [![](second.png)]]<br />
-Settings [![](settings.png)]]<br />
-choosing country [![](country.png)]]<br />
-European countries [![](europe.png)]]<br />
-choosing protocol [![](protocol.png)]]<br />
-checking best servers [![](tops.png)]]<br />
+Before click ![](first.png)<br />
+Menu : ![](second.png)<br />
+Settings ![](settings.png)<br />
+choosing country ![](country.png)<br />
+European countries ![](europe.png)<br />
+choosing protocol ![](protocol.png)<br />
+checking best servers ![](tops.png)<br />
 
 
 
